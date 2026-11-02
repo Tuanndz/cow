@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://y00275026cxp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tu55a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y3v5s"]
+
+[node name="DayTimeTextAndLives" type="Control" unique_id=541953044]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -4.0
+offset_top = -2.0
+offset_right = 467.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dayandtimeContatiner" type="PanelContainer" parent="." unique_id=1253817670]
+layout_mode = 0
+offset_right = 181.0
+offset_bottom = 40.0
+
+[node name="BGColor1" type="ColorRect" parent="dayandtimeContatiner" unique_id=616775009]
+layout_mode = 2
+color = Color(0.39607844, 0.39607844, 0.39607844, 1)
+
+[node name="TextHolder3" type="Label" parent="dayandtimeContatiner" unique_id=446453646]
+layout_mode = 2
+text = "Day 1   Time: 2:00AM"
+label_settings = SubResource("LabelSettings_tu55a")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="livesContainer" type="PanelContainer" parent="." unique_id=2032513525]
+layout_mode = 0
+offset_top = 44.0
+offset_right = 73.0
+offset_bottom = 84.0
+
+[node name="BGColor2" type="ColorRect" parent="livesContainer" unique_id=1891378562]
+layout_mode = 2
+color = Color(0.39607844, 0.39607844, 0.39607844, 1)
+
+[node name="TextHolder2" type="Label" parent="livesContainer" unique_id=507139351]
+layout_mode = 2
+text = "3 Lives"
+label_settings = SubResource("LabelSettings_y3v5s")
+horizontal_alignment = 1
+vertical_alignment = 1

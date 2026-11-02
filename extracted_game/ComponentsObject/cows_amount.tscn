@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://demquuote7ivt"]
+
+[ext_resource type="Texture2D" uid="uid://bml8cu8p6w4x1" path="res://icon.svg" id="1"]
+
+[node name="CowsAmount" type="Control" unique_id=2106206250]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Control" type="Control" parent="." unique_id=1895977574]
+anchors_preset = 0
+offset_left = 36.0
+offset_top = 20.0
+offset_right = 115.0
+offset_bottom = 79.0
+
+[node name="iconCow" type="Label" parent="Control" unique_id=1654772271]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 18.0
+offset_right = 37.0
+offset_bottom = 41.0
+
+[node name="ColorRect" type="TextureRect" parent="Control/iconCow" unique_id=495053018]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 32.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1")
+expand_mode = 1
+
+[node name="iconCow2" type="Label" parent="Control" unique_id=686281999]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 18.0
+offset_right = 73.0
+offset_bottom = 41.0
+text = "3/3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=682727108]
+z_index = -1
+layout_mode = 0
+offset_top = 10.0
+offset_right = 79.0
+offset_bottom = 49.0
+color = Color(0.39607844, 0.39607844, 0.39607844, 1)

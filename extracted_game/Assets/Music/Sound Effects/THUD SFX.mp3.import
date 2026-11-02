@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbki2jko43tqo"
+path="res://.godot/imported/THUD SFX.mp3-4d9ad0fd5e77331e602c79ced0667848.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Sound Effects/THUD SFX.mp3"
+dest_files=["res://.godot/imported/THUD SFX.mp3-4d9ad0fd5e77331e602c79ced0667848.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

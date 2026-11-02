@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj8onye7yk21n"
+path="res://.godot/imported/Morning News.mp3-7c85838f02e001cd0441b2e428d57289.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Background Music/Morning Broadcasts/Morning News.mp3"
+dest_files=["res://.godot/imported/Morning News.mp3-7c85838f02e001cd0441b2e428d57289.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

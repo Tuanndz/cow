@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biqe5gdi0itcg"
+path="res://.godot/imported/Distorted Moo 2.mp3-60fd5c4bd72104e90113b271fc596d82.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Sound Effects/Cow Audio/Anomaly Cow/Distorted Moo 2.mp3"
+dest_files=["res://.godot/imported/Distorted Moo 2.mp3-60fd5c4bd72104e90113b271fc596d82.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

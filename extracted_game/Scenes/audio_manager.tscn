@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bdu8bo4uxiy2y"]
+
+[ext_resource type="Script" uid="uid://b7xfyutm0mc0n" path="res://Scripts/AudioManager.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://bqj4l18f44pwm" path="res://Assets/Music/Sound Effects/Click SFX/Click.mp3" id="2"]
+[ext_resource type="AudioStream" uid="uid://c6vchrounmt70" path="res://Assets/Music/Sound Effects/Text Pop Up/Typing SFX.mp3" id="3"]
+[ext_resource type="AudioStream" uid="uid://0d3f5s4n35bo" path="res://Assets/Music/Sound Effects/Journal Page Pop up/freesound_community-crumple-03-40747.mp3" id="4"]
+[ext_resource type="AudioStream" uid="uid://di071soj5ao25" path="res://Assets/Music/Sound Effects/Cow Audio/Normal Cow/COW 1.mp3" id="5"]
+[ext_resource type="AudioStream" uid="uid://cyhr5oxtmbc5j" path="res://Assets/Music/Sound Effects/Cow Audio/Normal Cow/COW 2.mp3" id="6"]
+[ext_resource type="AudioStream" uid="uid://cvs7xcven646c" path="res://Assets/Music/Sound Effects/Cow Audio/Anomaly Cow/Distorted Moo.mp3" id="7"]
+[ext_resource type="AudioStream" uid="uid://biqe5gdi0itcg" path="res://Assets/Music/Sound Effects/Cow Audio/Anomaly Cow/Distorted Moo 2.mp3" id="8"]
+
+[node name="AudioManager" type="Node" unique_id=337495633]
+script = ExtResource("1")
+button_click_sound = ExtResource("2")
+typing_sound = ExtResource("3")
+page_sound = ExtResource("4")
+normal_cow_sounds = [ExtResource("5"), ExtResource("6")]
+anomaly_cow_sounds = [ExtResource("7"), ExtResource("8")]

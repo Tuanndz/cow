@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5fxtntu1rux2"
+path="res://.godot/imported/Noon (Day 7 True ED).mp3-3680860a7f973eadb41621bf81ea5fa9.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Background Music/Noon Gameplay/Noon (Day 7 True ED).mp3"
+dest_files=["res://.godot/imported/Noon (Day 7 True ED).mp3-3680860a7f973eadb41621bf81ea5fa9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

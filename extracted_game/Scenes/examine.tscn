@@ -1,0 +1,332 @@
+[gd_scene format=3 uid="uid://dvweqf7874vaj"]
+
+[ext_resource type="Script" uid="uid://c6gadl1mvkpjq" path="res://Scenes/examine.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://dslow6v0xfsdu" path="res://Assets/Music/Morning BGM.MP3" id="2"]
+[ext_resource type="AudioStream" uid="uid://di071soj5ao25" path="res://Assets/Music/Sound Effects/Cow Audio/Normal Cow/COW 1.mp3" id="3"]
+[ext_resource type="PackedScene" uid="uid://papa5wh1l7yn" path="res://ComponentsObject/menu_ingame.tscn" id="4"]
+
+[node name="Examine" type="Control" unique_id=1670257676]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1117809344]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NewsReport" type="Label" parent="." unique_id=1466532403]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.13100001
+anchor_top = 0.101
+anchor_right = 0.13100001
+anchor_bottom = 0.101
+offset_left = -19.912018
+offset_top = -11.448006
+offset_right = 20.087982
+offset_bottom = 11.551994
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="LivesDisplay" type="Label" parent="." unique_id=1778076412]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.767
+anchor_top = 0.15400001
+anchor_right = 0.767
+anchor_bottom = 0.15400001
+offset_left = -19.584045
+offset_top = -11.792007
+offset_right = 20.415955
+offset_bottom = 11.207993
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="ExamineMenu" type="VBoxContainer" parent="." unique_id=439120205]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.162
+anchor_top = 0.377
+anchor_right = 0.162
+anchor_bottom = 0.377
+offset_left = -111.62399
+offset_top = -190.296
+offset_right = 112.37601
+offset_bottom = 189.704
+
+[node name="Ears" type="Button" parent="ExamineMenu" unique_id=1602204330]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Ears"
+
+[node name="Eyes" type="Button" parent="ExamineMenu" unique_id=466837443]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Eyes"
+
+[node name="Body" type="Button" parent="ExamineMenu" unique_id=281365501]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Body"
+
+[node name="Tails" type="Button" parent="ExamineMenu" unique_id=381801236]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Tails"
+
+[node name="Legs" type="Button" parent="ExamineMenu" unique_id=587625595]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Legs"
+
+[node name="Mouth" type="Button" parent="ExamineMenu" unique_id=1872675168]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Mouth"
+
+[node name="ActionMenu" type="HBoxContainer" parent="." unique_id=1065722285]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16800001
+anchor_top = 0.77000004
+anchor_right = 0.16800001
+anchor_bottom = 0.77000004
+offset_left = -97.53601
+offset_top = -57.960022
+offset_right = 97.46399
+offset_bottom = 58.039978
+
+[node name="Allow" type="Button" parent="ActionMenu" unique_id=1718749843]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Allow
+"
+
+[node name="Shoot" type="Button" parent="ActionMenu" unique_id=1199244625]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Shoot
+"
+
+[node name="CowDisplay" type="TextureRect" parent="." unique_id=85359552]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734
+anchor_top = 0.587
+anchor_right = 0.734
+anchor_bottom = 0.587
+offset_left = -287.56805
+offset_top = -238.376
+offset_right = 288.43195
+offset_bottom = 238.624
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DayDisplay" type="Label" parent="." unique_id=1617188619]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.776
+anchor_top = 0.067
+anchor_right = 0.776
+anchor_bottom = 0.067
+offset_left = -42.952026
+offset_top = -22.416
+offset_right = 43.047974
+offset_bottom = 22.584
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Day 1"
+
+[node name="Examine" type="Label" parent="." unique_id=1283427072]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16900001
+anchor_top = 0.275
+anchor_right = 0.16900001
+anchor_bottom = 0.275
+offset_left = -82.68802
+offset_top = -171.2
+offset_right = 85.31198
+offset_bottom = -78.2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Examine! 
+"
+
+[node name="DialogueBox" type="ColorRect" parent="." unique_id=1226832286]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51600003
+anchor_top = 0.924
+anchor_right = 0.51600003
+anchor_bottom = 0.924
+offset_left = -527.432
+offset_top = -34.752014
+offset_right = 526.568
+offset_bottom = 34.247986
+color = Color(0, 0, 0, 1)
+
+[node name="DialogueText" type="Label" parent="DialogueBox" unique_id=1267817208]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -402.0
+offset_top = -30.0
+offset_right = 419.0
+offset_bottom = 22.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1628019231]
+stream = ExtResource("2")
+
+[node name="ZoomPopup" type="ColorRect" parent="." unique_id=1098288457]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="Panel" type="Panel" parent="ZoomPopup" unique_id=1685827277]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 155.0
+offset_top = -152.00002
+offset_right = 251.42847
+offset_bottom = -86.813126
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.6400013, 4.2799997)
+
+[node name="CloseButton" type="Button" parent="ZoomPopup/Panel" unique_id=813454811]
+layout_mode = 0
+offset_left = 13.186821
+offset_top = 68.92524
+offset_right = 74.18682
+offset_bottom = 90.92524
+theme_override_font_sizes/font_size = 10
+text = "Close/Back
+"
+
+[node name="ZoomInEars" type="TextureRect" parent="ZoomPopup/Panel" unique_id=948552959]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -1.1600001
+anchor_top = -0.35300002
+anchor_right = -1.1600001
+anchor_bottom = -0.35300002
+offset_left = -48.30773
+offset_top = -32.36286
+offset_right = 48.39556
+offset_bottom = 32.35676
+
+[node name="Audio" type="Button" parent="ZoomPopup/Panel" unique_id=617106452]
+layout_mode = 0
+offset_left = 21.428581
+offset_top = 42.52337
+offset_right = 65.42858
+offset_bottom = 62.52337
+theme_override_font_sizes/font_size = 8
+text = "Play Moo
+"
+
+[node name="MooSound" type="AudioStreamPlayer" parent="." unique_id=117344642]
+stream = ExtResource("3")
+
+[node name="MenuIngame" parent="." unique_id=1784783710 instance=ExtResource("4")]
+visible = false
+layout_mode = 1
+
+[node name="GameoverBlurred" type="ColorRect" parent="." unique_id=764679603]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5294118)
+
+[node name="GameOverPanel" type="Panel" parent="." unique_id=363010752]
+process_mode = 3
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.518
+anchor_top = 0.5
+anchor_right = 0.518
+anchor_bottom = 0.5
+offset_left = -255.56
+offset_top = -141.0
+offset_right = 260.44
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleText" type="Label" parent="GameOverPanel" unique_id=66823972]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -89.0
+offset_top = 15.0
+offset_right = 89.0
+offset_bottom = 57.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.5890956, 0.5890956, 0.5890956, 1)
+theme_override_font_sizes/font_size = 25
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameOverPanel" unique_id=927216630]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.499
+anchor_top = 0.90400004
+anchor_right = 0.499
+anchor_bottom = 0.90400004
+offset_left = -53.328003
+offset_top = -148.848
+offset_right = 52.671997
+offset_bottom = -44.848007
+
+[node name="RestartBtn" type="Button" parent="GameOverPanel/VBoxContainer" unique_id=1337519245]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Restart"
+
+[node name="MainMenuBtn" type="Button" parent="GameOverPanel/VBoxContainer" unique_id=1667700062]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="ExamineMenu/Ears" to="." method="_on_ears_pressed"]
+[connection signal="pressed" from="ExamineMenu/Eyes" to="." method="_on_eyes_pressed"]
+[connection signal="pressed" from="ExamineMenu/Body" to="." method="_on_body_pressed"]
+[connection signal="pressed" from="ExamineMenu/Tails" to="." method="_on_tails_pressed"]
+[connection signal="pressed" from="ExamineMenu/Legs" to="." method="_on_legs_pressed"]
+[connection signal="pressed" from="ExamineMenu/Mouth" to="." method="_on_mouth_pressed"]
+[connection signal="pressed" from="ActionMenu/Allow" to="." method="_on_allow_pressed"]
+[connection signal="pressed" from="ActionMenu/Shoot" to="." method="_on_shoot_pressed"]
+[connection signal="pressed" from="ZoomPopup/Panel/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="ZoomPopup/Panel/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="GameOverPanel/VBoxContainer/RestartBtn" to="." method="_on_restart_btn_pressed"]
+[connection signal="pressed" from="GameOverPanel/VBoxContainer/MainMenuBtn" to="." method="_on_main_menu_btn_pressed"]

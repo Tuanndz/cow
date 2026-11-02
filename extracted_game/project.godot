@@ -1,0 +1,56 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="TheCattle"
+config/description="A psychological observation horror game where a routine inspection job slowly spirals into an unnatural nightmare.
+You are a livestock inspector stationed at an isolated regional checkpoint. Your daily task seems straightforward: examine the passing cows, identify any anomalies, and safely clear the normal ones for transport. However, as the week progresses, what starts as simple skin discoloration morphs into terrifying, grotesque mutations such as droopy ears, extra limbs, rotting flesh, and unsettling human eyes.
+Armed with only your keen attention to detail and a weapon to dispatch the variants, you must meticulously inspect every part of the cattle before letting them in. Rely on cryptic morning TV broadcasts for hints about the day's new threats, but beware, the news anchor might be speaking directly to you. Survive the escalating horrors each day, manage your limited lives, and uncover hidden journal pages to piece together the dark truth behind a sinister cult known as \"The First Herd.\" 
+"
+run/main_scene="uid://dlarcccpbyycx"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="uid://chb6s1e3chfws"
+
+[autoload]
+
+Global="*uid://ctjqnc7dv5a1d"
+AudioManager="*res://Scenes/audio_manager.tscn"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/stretch/mode="canvas_items"
+
+[editor_overrides]
+
+text_editor/behavior/indent/type=0
+text_editor/behavior/indent/size=4
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[gui]
+
+theme/custom_font="uid://icu7qbj088pn"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

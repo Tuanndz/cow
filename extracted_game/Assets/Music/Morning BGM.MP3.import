@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dslow6v0xfsdu"
+path="res://.godot/imported/Morning BGM.MP3-937b534f226e42516efa02e2ec287f6f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Morning BGM.MP3"
+dest_files=["res://.godot/imported/Morning BGM.MP3-937b534f226e42516efa02e2ec287f6f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

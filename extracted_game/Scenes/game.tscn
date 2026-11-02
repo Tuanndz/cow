@@ -1,0 +1,1387 @@
+[gd_scene format=3 uid="uid://cqrkx1j33quht"]
+
+[ext_resource type="Script" uid="uid://brd38b8tvpgow" path="res://Scenes/game.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://dj8onye7yk21n" path="res://Assets/Music/Background Music/Morning Broadcasts/Morning News.mp3" id="2"]
+[ext_resource type="AudioStream" uid="uid://bxy8sve5ecrve" path="res://Assets/Music/Background Music/Morning Broadcasts/Last Morning News (DAY 7).mp3" id="3"]
+[ext_resource type="AudioStream" uid="uid://c74l5eoe862d7" path="res://Assets/Music/Background Music/Noon Gameplay/Noon (Day 1-4).mp3" id="4"]
+[ext_resource type="AudioStream" uid="uid://cnwucvph5pfeh" path="res://Assets/Music/Background Music/Noon Gameplay/Noon (Day 5).mp3" id="5"]
+[ext_resource type="AudioStream" uid="uid://b6h6paf1oe5rb" path="res://Assets/Music/Background Music/Noon Gameplay/Noon (Day 6).mp3" id="6"]
+[ext_resource type="AudioStream" uid="uid://crfny1lujlrue" path="res://Assets/Music/Background Music/Noon Gameplay/Noon (Day 7 Bad and Good ED).mp3" id="7"]
+[ext_resource type="AudioStream" uid="uid://b5fxtntu1rux2" path="res://Assets/Music/Background Music/Noon Gameplay/Noon (Day 7 True ED).mp3" id="8"]
+[ext_resource type="AudioStream" uid="uid://c4uxgps72q3v3" path="res://Assets/Music/Background Music/Night BGM/Nighttime (Day 1-6).mp3" id="9"]
+[ext_resource type="Texture2D" uid="uid://c0th3ybnivfb" path="res://Assets/NOON/NOON DAY 1.jpg" id="10"]
+[ext_resource type="Texture2D" uid="uid://dgu3opmbjej63" path="res://Assets/NOON/NOON DAY 2.jpg" id="11"]
+[ext_resource type="Texture2D" uid="uid://bmwaw2f56hh1y" path="res://Assets/NOON/NOON DAY 3.jpg" id="12"]
+[ext_resource type="Texture2D" uid="uid://bkp2hs674gnf6" path="res://Assets/NOON/NOON DAY 4.jpg" id="13"]
+[ext_resource type="Texture2D" uid="uid://bsqm5owau5rld" path="res://Assets/NOON/NOON DAY 5.jpg" id="14"]
+[ext_resource type="Texture2D" uid="uid://br3vd4yfo0kmy" path="res://Assets/NOON/NOON DAY 6.jpg" id="15"]
+[ext_resource type="Texture2D" uid="uid://bifmivawerldu" path="res://Assets/NOON/NOON DAY 7 (TRUE ENDING).jpg" id="16"]
+[ext_resource type="Texture2D" uid="uid://ddc3ktxjq3hnj" path="res://Assets/NOON/NOON DAY 7 (TRUE FORM JUMPSCARE BG).jpg" id="17"]
+[ext_resource type="AudioStream" uid="uid://dslow6v0xfsdu" path="res://Assets/Music/Morning BGM.MP3" id="18"]
+[ext_resource type="AudioStream" uid="uid://biqe5gdi0itcg" path="res://Assets/Music/Sound Effects/Cow Audio/Anomaly Cow/Distorted Moo 2.mp3" id="19"]
+[ext_resource type="AudioStream" uid="uid://c5rq8bxqrmfn0" path="res://Assets/Music/Sound Effects/Shoot SFX/Weapon Pull Out SFX.mp3" id="20"]
+[ext_resource type="AudioStream" uid="uid://cp2rbex71u35d" path="res://Assets/Music/Sound Effects/Shoot SFX/Weapon Shoot SFX.MP3" id="21"]
+[ext_resource type="AudioStream" uid="uid://di071soj5ao25" path="res://Assets/Music/Sound Effects/Cow Audio/Normal Cow/COW 1.mp3" id="22"]
+[ext_resource type="AudioStream" uid="uid://cyhr5oxtmbc5j" path="res://Assets/Music/Sound Effects/Cow Audio/Normal Cow/COW 2.mp3" id="23"]
+[ext_resource type="Texture2D" uid="uid://ruoov8mrtk4a" path="res://Assets/COW ASSETS/NORMAL COW.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://brpsimt6ilcxy" path="res://Assets/ICONS/HEART-LIVES.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bd4qcgiinmv60" path="res://Assets/ICONS/Crosshair.png" id="26"]
+[ext_resource type="PackedScene" uid="uid://papa5wh1l7yn" path="res://ComponentsObject/menu_ingame.tscn" id="27"]
+[ext_resource type="Texture2D" uid="uid://b6aqjw6yyycnu" path="res://Assets/ICONS/journal-paper-fold.png" id="28"]
+[ext_resource type="Script" uid="uid://hmwmbkue3opw" path="res://Scripts/page.gd" id="29"]
+[ext_resource type="Texture2D" uid="uid://bltgoo4c3w5h" path="res://Assets/JOURNAL PAGE/PAGE 1.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://cnh2r7ddrucvu" path="res://Assets/JOURNAL PAGE/PAGE 2.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://cluw4spm14tg0" path="res://Assets/JOURNAL PAGE/PAGE 3.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://mhwtv3pdy775" path="res://Assets/JOURNAL PAGE/PAGE 4.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://soh25h75ekdu" path="res://Assets/JOURNAL PAGE/PAGE 5.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://c7nb748tsnr3p" path="res://Assets/JOURNAL PAGE/PAGE 6.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://b88qd62f1hgdw" path="res://Assets/JOURNAL PAGE/PAGE 7 (TRUE ENDING).png" id="36"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ym3tv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bwj6o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d8apk"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6uxt2"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ym3tv"]
+
+[sub_resource type="Shader" id="Shader_i26dy"]
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+/*
+	CRT + VHS full-screen post-process shader for Godot 4.5 / 4.6.
+
+	How it works:
+	This shader reads the already-rendered screen using hint_screen_texture + SCREEN_UV,
+	then redraws it with CRT/VHS effects.
+
+	Important layering note:
+	This shader only affects things drawn behind this ColorRect.
+
+	Clean UI setup:
+	- Put the CRT shader ColorRect on a lower CanvasLayer.
+	- Put your UI/HUD on a higher CanvasLayer.
+
+	CRT/VHS UI setup:
+	- Put your UI/HUD behind the shader.
+	- Put the CRT shader ColorRect on a higher CanvasLayer.
+
+	Same CanvasLayer setup:
+	- Give the CRT shader ColorRect a higher z_index than the things you want affected.
+	- Anything with a higher z_index than the shader will be drawn clean above it.
+
+	Also recommended:
+	Set the shader ColorRect Mouse Filter to Ignore so it does not block UI clicks.
+*/
+
+uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_nearest;
+
+// --- Color controls ---
+uniform float brightness : hint_range(0.0, 2.0) = 1.02;
+uniform float contrast : hint_range(0.0, 2.0) = 1.08;
+uniform float saturation : hint_range(0.0, 2.0) = 1.10;
+uniform float gamma : hint_range(0.2, 3.0) = 1.05;
+
+// --- CRT geometry / lens ---
+uniform float curvature : hint_range(0.0, 0.40) = 0.15;
+uniform float corner_soften : hint_range(0.0, 0.20) = 0.06;
+uniform float vignette : hint_range(0.0, 1.00) = 0.38;
+
+// --- Scanlines / phosphor ---
+uniform float scanline_strength : hint_range(0.0, 2.0) = 0.1;
+uniform float scanline_density : hint_range(0.5, 3.0) = 1.15;
+uniform float interlace_strength : hint_range(0.0, 1.0) = 0.20;
+
+// Shadow mask / RGB triads.
+// Turn mask_strength down if the screen-door effect is too strong.
+uniform float mask_strength : hint_range(0.0, 1.0) = 0.22;
+uniform float mask_scale : hint_range(0.5, 4.0) = 1.0;
+
+// --- VHS / VCR artifacts ---
+uniform float chroma_offset_px : hint_range(0.0, 6.0) = 1.6;
+uniform float luma_smear_px : hint_range(0.0, 8.0) = 1.8;
+uniform float jitter_px : hint_range(0.0, 8.0) = 2;
+uniform float wobble_px : hint_range(0.0, 10.0) = 1.2;
+
+uniform float tape_noise : hint_range(0.0, 1.0) = 0.2;
+uniform float tape_lines : hint_range(0.0, 1.0) = 0.2;
+
+uniform float roll_speed : hint_range(0.0, 1.5) = 0.1;
+uniform float roll_strength : hint_range(0.0, 0.6) = 0.1;
+
+// --- Cheap bloom-ish glow ---
+uniform float glow_strength : hint_range(0.0, 2.0) = 0.25;
+uniform float glow_threshold : hint_range(0.0, 1.0) = 0.65;
+
+float hash11(float n) {
+	return fract(sin(n) * 43758.5453123);
+}
+
+float hash12(vec2 p) {
+	return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
+}
+
+vec2 crt_curve(vec2 uv, float k) {
+	// Barrel distortion style curve.
+	vec2 cc = uv * 2.0 - 1.0;
+	vec2 d = cc * cc;
+	cc *= 1.0 + k * vec2(d.y, d.x);
+	return cc * 0.5 + 0.5;
+}
+
+float inside01(vec2 uv) {
+	// Returns 1.0 if uv is inside the 0.0 to 1.0 screen area.
+	return step(0.0, uv.x) * step(uv.x, 1.0) * step(0.0, uv.y) * step(uv.y, 1.0);
+}
+
+vec3 apply_color_controls(vec3 color) {
+	// Brightness.
+	color *= brightness;
+
+	// Contrast around 0.5.
+	color = mix(vec3(0.5), color, contrast);
+
+	// Saturation.
+	float luma = dot(color, vec3(0.2126, 0.7152, 0.0722));
+	color = mix(vec3(luma), color, saturation);
+
+	// Gamma.
+	color = pow(max(color, vec3(0.0)), vec3(1.0 / max(gamma, 0.0001)));
+
+	return color;
+}
+
+vec3 triad_mask(vec2 frag_xy) {
+	// Simple RGB triad mask across the X axis.
+	float x = floor(frag_xy.x / max(mask_scale, 0.0001));
+	float triad_index = mod(x, 3.0);
+
+	if (triad_index < 1.0) {
+		return vec3(1.10, 0.85, 0.85);
+	}
+
+	if (triad_index < 2.0) {
+		return vec3(0.85, 1.10, 0.85);
+	}
+
+	return vec3(0.85, 0.85, 1.10);
+}
+
+vec3 sample_screen(vec2 uv) {
+	return textureLod(screen_texture, uv, 0.0).rgb;
+}
+
+void fragment() {
+	vec2 px = SCREEN_PIXEL_SIZE;
+	vec2 res = 1.0 / px;
+	float t = TIME;
+
+	// Start from screen UV.
+	vec2 uv = SCREEN_UV;
+
+	// --- VHS line jitter ---
+	float y_line = floor(uv.y * res.y);
+	float jitter_random = hash11(y_line + floor(t * 15.0) * 37.0);
+	float jitter = (jitter_random - 0.5) * 2.0;
+	uv.x += jitter * jitter_px * px.x;
+
+	// --- Slow horizontal wobble ---
+	uv.x += sin(uv.y * 8.0 + t * 1.2) * wobble_px * px.x;
+
+	// --- CRT curve ---
+	vec2 cuv = crt_curve(uv, curvature);
+	float in_bounds = inside01(cuv);
+
+	// --- Rounded corners / soft screen edge ---
+	vec2 corner_distance = abs(cuv - 0.5) * 2.0;
+	float edge = max(corner_distance.x, corner_distance.y);
+	float corner_mask = 1.0 - smoothstep(1.0 - corner_soften, 1.0, edge);
+
+	// --- Chromatic aberration / VHS chroma shift ---
+	vec2 chroma_offset = vec2(chroma_offset_px * px.x, 0.0);
+
+	float red = sample_screen(cuv + chroma_offset).r;
+	float green = sample_screen(cuv).g;
+	float blue = sample_screen(cuv - chroma_offset).b;
+
+	vec3 color = vec3(red, green, blue);
+
+	// --- Luma smear / horizontal ghosting ---
+	float smear = luma_smear_px * px.x;
+
+	vec3 smear_right = sample_screen(cuv + vec2(smear, 0.0));
+	vec3 smear_left = sample_screen(cuv - vec2(smear, 0.0));
+	vec3 smeared_color = (color + smear_right + smear_left) / 3.0;
+
+	color = mix(color, smeared_color, 0.35);
+
+	// --- Scanlines ---
+	float scanline_wave = sin(cuv.y * res.y * 3.14159 * scanline_density);
+	float scanline_darkening = 0.5 - 0.5 * scanline_wave;
+	float scanline_multiplier = 1.0 - scanline_strength * scanline_darkening;
+
+	color *= scanline_multiplier;
+
+	// --- Interlacing flicker ---
+	float field = mod(floor(FRAGCOORD.y) + floor(t * 60.0), 2.0);
+	color *= 1.0 - interlace_strength * field * 0.10;
+
+	// --- Rolling tracking bar ---
+	float roll_y = fract(t * max(roll_speed, 0.0001));
+	float roll_distance = abs(cuv.y - roll_y);
+	float roll_bar = smoothstep(0.20, 0.0, roll_distance);
+
+	color += roll_bar * roll_strength * vec3(0.12);
+
+	// --- Random horizontal tape tracking lines ---
+	float line_random = hash11(y_line * 0.7 + floor(t * 12.0) * 11.0);
+	float tape_line = smoothstep(0.985, 1.0, line_random) * tape_lines;
+
+	color += tape_line * vec3(0.18);
+
+	// --- Grain ---
+	float noise = hash12(FRAGCOORD.xy + vec2(t * 120.0, t * 90.0));
+	float grain = (noise - 0.5) * 2.0;
+
+	color += grain * tape_noise * 0.06;
+
+	// --- Occasional white specks ---
+	float speck_random = hash12(FRAGCOORD.xy * 0.73 + t * 40.0);
+	float speck = smoothstep(0.995, 1.0, speck_random);
+
+	color += speck * tape_noise * 0.25;
+
+	// --- Cheap glow on bright pixels ---
+	vec3 center_color = color;
+
+	vec3 glow_right = sample_screen(cuv + vec2(px.x, 0.0));
+	vec3 glow_left = sample_screen(cuv - vec2(px.x, 0.0));
+	vec3 glow_up = sample_screen(cuv + vec2(0.0, px.y));
+	vec3 glow_down = sample_screen(cuv - vec2(0.0, px.y));
+
+	vec3 blur = (center_color + glow_right + glow_left + glow_up + glow_down) / 5.0;
+	float brightness_value = dot(blur, vec3(0.2126, 0.7152, 0.0722));
+	vec3 glow = max(blur - vec3(glow_threshold), vec3(0.0));
+
+	color += glow * glow_strength * (0.5 + 0.5 * brightness_value);
+
+	// --- Vignette ---
+	vec2 vignette_uv = cuv - 0.5;
+	float vignette_mask = smoothstep(0.9, 0.2, dot(vignette_uv, vignette_uv) * 2.2);
+
+	color *= mix(1.0 - vignette, 1.0, vignette_mask);
+
+	// --- Shadow mask / RGB triads ---
+	vec3 mask = triad_mask(FRAGCOORD.xy);
+	color *= mix(vec3(1.0), mask, mask_strength);
+
+	// --- Color grading ---
+	color = apply_color_controls(color);
+
+	// Outside the curved screen / rounded edges fades to black.
+	color *= in_bounds * corner_mask;
+
+	COLOR = vec4(color, 1.0);
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lmoi6"]
+shader = SubResource("Shader_i26dy")
+shader_parameter/brightness = 1.02
+shader_parameter/contrast = 1.0000000475
+shader_parameter/saturation = 1.1
+shader_parameter/gamma = 1.05
+shader_parameter/curvature = 0.0570000027075
+shader_parameter/corner_soften = 0.0550000026125
+shader_parameter/vignette = 0.38
+shader_parameter/scanline_strength = 0.64400003059
+shader_parameter/scanline_density = 2.770000107825
+shader_parameter/interlace_strength = 0.2
+shader_parameter/mask_strength = 0.22
+shader_parameter/mask_scale = 1.0
+shader_parameter/chroma_offset_px = 1.6
+shader_parameter/luma_smear_px = 2.2
+shader_parameter/jitter_px = 0.2450000116375
+shader_parameter/wobble_px = 0.4150000197125
+shader_parameter/tape_noise = 0.402000019095
+shader_parameter/tape_lines = 0.2610000123975
+shader_parameter/roll_speed = 0.774000036765
+shader_parameter/roll_strength = 0.09200000437
+shader_parameter/glow_strength = 0.186000008835
+shader_parameter/glow_threshold = 0.65
+
+[node name="Game" type="Control" unique_id=1690294192]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+morning_news_music = ExtResource("2")
+last_morning_news_music = ExtResource("3")
+noon_music_day_1_4 = ExtResource("4")
+noon_music_day_5 = ExtResource("5")
+noon_music_day_6 = ExtResource("6")
+noon_music_day_7 = ExtResource("7")
+noon_music_day_7_true = ExtResource("8")
+night_music = ExtResource("9")
+
+[node name="BackGroundNoons" type="Panel" parent="." unique_id=563196262]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BgNoon1" type="TextureRect" parent="BackGroundNoons" unique_id=1256403980]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon2" type="TextureRect" parent="BackGroundNoons" unique_id=921006128]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon3" type="TextureRect" parent="BackGroundNoons" unique_id=745354130]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon4" type="TextureRect" parent="BackGroundNoons" unique_id=1456615522]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon5" type="TextureRect" parent="BackGroundNoons" unique_id=152236976]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon6" type="TextureRect" parent="BackGroundNoons" unique_id=856874111]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon7" type="TextureRect" parent="BackGroundNoons" unique_id=147867925]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="BgNoon8" type="TextureRect" parent="BackGroundNoons" unique_id=752479947]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Audio" type="Node" parent="." unique_id=1558310134]
+
+[node name="Noon(day14)" type="AudioStreamPlayer" parent="Audio" unique_id=867945841]
+stream = ExtResource("4")
+
+[node name="BGMDay" type="AudioStreamPlayer" parent="Audio" unique_id=1776898045]
+stream = ExtResource("18")
+parameters/looping = true
+
+[node name="BGMNightGood" type="AudioStreamPlayer" parent="Audio" unique_id=2077076795]
+stream = ExtResource("9")
+parameters/looping = true
+
+[node name="BGMNightBad" type="AudioStreamPlayer" parent="Audio" unique_id=1445392217]
+stream = ExtResource("9")
+parameters/looping = true
+
+[node name="StingReveal" type="AudioStreamPlayer" parent="Audio" unique_id=1332479094]
+stream = ExtResource("19")
+
+[node name="SfxPull" type="AudioStreamPlayer" parent="Audio" unique_id=205612218]
+stream = ExtResource("20")
+
+[node name="SfxShoot" type="AudioStreamPlayer" parent="Audio" unique_id=640450522]
+stream = ExtResource("21")
+
+[node name="SfxMoo1" type="AudioStreamPlayer" parent="Audio" unique_id=1521493564]
+stream = ExtResource("22")
+
+[node name="SfxMoo2" type="AudioStreamPlayer" parent="Audio" unique_id=1919174833]
+stream = ExtResource("23")
+
+[node name="SfxMooWeird" type="AudioStreamPlayer" parent="Audio" unique_id=1988659228]
+stream = ExtResource("23")
+pitch_scale = 0.45
+
+[node name="HUD" type="Control" parent="." unique_id=400370611]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CowCounterPanel" type="Panel" parent="HUD" unique_id=1124316606]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 14.0
+offset_right = 350.0
+offset_bottom = 66.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ym3tv")
+
+[node name="HBox" type="HBoxContainer" parent="HUD/CowCounterPanel" unique_id=1583840126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = -10.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="CowIcon" type="TextureRect" parent="HUD/CowCounterPanel/HBox" unique_id=711957538]
+custom_minimum_size = Vector2(61, 40)
+layout_mode = 2
+texture = ExtResource("24")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CowCounter" type="Label" parent="HUD/CowCounterPanel/HBox" unique_id=1814026053]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "6/6"
+vertical_alignment = 1
+
+[node name="TopRight" type="VBoxContainer" parent="HUD" unique_id=1642054573]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -400.0
+offset_top = 14.0
+offset_right = -110.0
+offset_bottom = 130.0
+grow_horizontal = 0
+theme_override_constants/separation = 8
+
+[node name="DayTimePanel" type="Panel" parent="HUD/TopRight" unique_id=955632575]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bwj6o")
+
+[node name="DayTimeLabel" type="Label" parent="HUD/TopRight/DayTimePanel" unique_id=2136044429]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 27
+text = "Day 1   Time: 8:00 AM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LivesPanel" type="Panel" parent="HUD/TopRight" unique_id=1156964192]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bwj6o")
+
+[node name="HBox" type="HBoxContainer" parent="HUD/TopRight/LivesPanel" unique_id=732033400]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -20.0
+offset_right = 122.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="LivesLabel" type="Label" parent="HUD/TopRight/LivesPanel/HBox" unique_id=1396534445]
+layout_mode = 2
+theme_override_font_sizes/font_size = 27
+text = "LIVES"
+vertical_alignment = 1
+
+[node name="Light1" type="TextureRect" parent="HUD/TopRight/LivesPanel/HBox" unique_id=1933708712]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+texture = ExtResource("25")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Light2" type="TextureRect" parent="HUD/TopRight/LivesPanel/HBox" unique_id=1942799016]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+texture = ExtResource("25")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Light3" type="TextureRect" parent="HUD/TopRight/LivesPanel/HBox" unique_id=1510132346]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+texture = ExtResource("25")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="JournalCounterPanel" type="Panel" parent="HUD" unique_id=921336051]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.162
+anchor_top = 0.044000003
+anchor_right = 0.162
+anchor_bottom = 0.044000003
+offset_left = 38.95999
+offset_top = -33.520004
+offset_right = 163.95999
+offset_bottom = 18.479996
+theme_override_styles/panel = SubResource("StyleBoxEmpty_d8apk")
+
+[node name="HBox" type="HBoxContainer" parent="HUD/JournalCounterPanel" unique_id=784115058]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = -10.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="PageIcon" type="ColorRect" parent="HUD/JournalCounterPanel/HBox" unique_id=1632928616]
+custom_minimum_size = Vector2(30, 40)
+layout_mode = 2
+color = Color(0.9, 0.85, 0.7, 1)
+
+[node name="PageIconLabel" type="Label" parent="HUD/JournalCounterPanel/HBox/PageIcon" unique_id=1713640280]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.25, 0.2, 0.1, 1)
+theme_override_font_sizes/font_size = 20
+text = "≡"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JournalCounter" type="Label" parent="HUD/JournalCounterPanel/HBox" unique_id=1184504356]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "0/6"
+vertical_alignment = 1
+
+[node name="CowArea" type="Control" parent="." unique_id=193611623]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.397
+anchor_right = 0.5
+anchor_bottom = 0.397
+offset_left = -80.0
+offset_top = 104.23999
+offset_right = 560.0
+offset_bottom = 544.24
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CowRect" type="TextureRect" parent="CowArea" unique_id=1164168780]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 640.0
+offset_bottom = 400.0
+texture = SubResource("CompressedTexture2D_6uxt2")
+expand_mode = 3
+
+[node name="CowLabel" type="Label" parent="CowArea" unique_id=617040569]
+visible = false
+layout_mode = 0
+offset_top = 40.0
+offset_right = 640.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 32
+text = "COW HERE
+
+[ cow art placeholder ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PartHighlight" type="ColorRect" parent="CowArea" unique_id=1799261400]
+visible = false
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+color = Color(1, 0.95, 0.4, 0.3)
+
+[node name="PartTag" type="Label" parent="CowArea/PartHighlight" unique_id=1710650270]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0.85, 1)
+theme_override_font_sizes/font_size = 16
+text = "EARS
+[ zoom art placeholder ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Crosshair" type="Label" parent="CowArea" unique_id=810320773]
+visible = false
+layout_mode = 0
+offset_top = 40.0
+offset_right = 640.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(1, 0.15, 0.15, 1)
+theme_override_font_sizes/font_size = 150
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Crosshair 2" type="TextureRect" parent="CowArea" unique_id=272566508]
+visible = false
+layout_mode = 0
+offset_left = 240.0
+offset_top = 145.0
+offset_right = 280.0
+offset_bottom = 185.0
+scale = Vector2(4.055, 4.055)
+texture = ExtResource("26")
+expand_mode = 1
+
+[node name="ScaryPanel" type="Panel" parent="CowArea" unique_id=486659183]
+visible = false
+layout_mode = 0
+offset_left = -360.0
+offset_top = 90.0
+offset_right = -30.0
+offset_bottom = 330.0
+
+[node name="ScaryText" type="Label" parent="CowArea/ScaryPanel" unique_id=1799595660]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 14.0
+offset_right = -18.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.4, 0.35, 1)
+theme_override_font_sizes/font_size = 22
+text = "SCARY DIALOGUE HERE"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MenuIngame" parent="." unique_id=1133064928 instance=ExtResource("27")]
+layout_mode = 1
+anchors_preset = 10
+anchor_bottom = 0.0
+offset_bottom = 1080.0
+grow_vertical = 1
+
+[node name="LeftMenu" type="VBoxContainer" parent="." unique_id=715333126]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 148.0
+offset_top = -300.0
+offset_right = 464.0
+offset_bottom = 175.0
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="ExamineBtn" type="Button" parent="LeftMenu" unique_id=2004831402]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "EXAMINE!"
+
+[node name="ExamineSub" type="MarginContainer" parent="LeftMenu" unique_id=2060314038]
+layout_mode = 2
+theme_override_constants/margin_left = 34
+
+[node name="Sub" type="VBoxContainer" parent="LeftMenu/ExamineSub" unique_id=769623719]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="BtnEars" type="Button" parent="LeftMenu/ExamineSub/Sub" unique_id=157206460]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "EARS"
+
+[node name="BtnEyes" type="Button" parent="LeftMenu/ExamineSub/Sub" unique_id=536235266]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "EYES"
+
+[node name="BtnBody" type="Button" parent="LeftMenu/ExamineSub/Sub" unique_id=2131567008]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "BODY"
+
+[node name="BtnTail" type="Button" parent="LeftMenu/ExamineSub/Sub" unique_id=1192011420]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "TAILS"
+
+[node name="BtnLegs" type="Button" parent="LeftMenu/ExamineSub/Sub" unique_id=1563960810]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "LEGS"
+
+[node name="BtnMouth" type="Button" parent="LeftMenu/ExamineSub/Sub" unique_id=1322657846]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "MOUTH"
+
+[node name="MenuSpacer" type="Control" parent="LeftMenu" unique_id=1084761942]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ActionRow" type="HBoxContainer" parent="LeftMenu" unique_id=791743731]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="AllowBtn" type="Button" parent="LeftMenu/ActionRow" unique_id=639397659]
+modulate = Color(0.6, 1, 0.6, 1)
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "ALLOW"
+
+[node name="ShootBtn" type="Button" parent="LeftMenu/ActionRow" unique_id=1950672281]
+modulate = Color(1, 0.55, 0.55, 1)
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "SHOOT"
+
+[node name="ZoomControls" type="HBoxContainer" parent="." unique_id=323234634]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -560.0
+offset_top = -260.0
+offset_right = -140.0
+offset_bottom = -200.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 14
+
+[node name="MooBtn" type="Button" parent="ZoomControls" unique_id=588695858]
+visible = false
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "PLAY MOO"
+
+[node name="ZoomOutBtn" type="Button" parent="ZoomControls" unique_id=448947866]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "ZOOM OUT"
+
+[node name="Page" type="TextureButton" parent="." unique_id=526177075]
+process_mode = 3
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.82000005
+anchor_top = 0.58000004
+anchor_right = 0.837
+anchor_bottom = 0.6
+offset_left = -0.40014648
+offset_top = -0.4000244
+offset_right = 0.95996094
+texture_normal = ExtResource("28")
+ignore_texture_size = true
+stretch_mode = 6
+script = ExtResource("29")
+
+[node name="NewsBG" type="TextureRect" parent="." unique_id=114271138]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CompressedTexture2D_ym3tv")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="NewsBGLabel" type="Label" parent="NewsBG" unique_id=258527165]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 30
+text = "[ TV NEWS BG / video placeholder ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="NewsBG2" type="TextureRect" parent="." unique_id=1926500293]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CompressedTexture2D_ym3tv")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="NewsBGLabel" type="Label" parent="NewsBG2" unique_id=936192416]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 30
+text = "[ TV NEWS BG / video placeholder ]"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="DialogueBox" type="Panel" parent="." unique_id=1268785548]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.07300001
+anchor_top = 0.83800006
+anchor_right = 0.92700005
+anchor_bottom = 0.98100007
+offset_left = -0.16001892
+offset_top = -40.04004
+offset_right = 0.15991211
+offset_bottom = 0.51989746
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DialogueText" type="Label" parent="DialogueBox" unique_id=333385511]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.80600005
+offset_left = 51.0
+offset_top = 7.0
+offset_right = -9.0
+offset_bottom = 41.069992
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "DIALOGUE HERE"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AdvanceHint" type="Label" parent="DialogueBox" unique_id=865829644]
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -32.0
+offset_right = -20.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 16
+text = "(Click or press SPACE to continue)"
+horizontal_alignment = 2
+
+[node name="GameOverPanel" type="Control" parent="." unique_id=136394926]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dimmer" type="ColorRect" parent="GameOverPanel" unique_id=1654070631]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.88)
+
+[node name="Panel" type="Panel" parent="GameOverPanel" unique_id=1977646196]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -370.0
+offset_top = -250.0
+offset_right = 370.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GoTitle" type="Label" parent="GameOverPanel/Panel" unique_id=152780010]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 40.0
+offset_bottom = 110.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.25, 0.25, 1)
+theme_override_font_sizes/font_size = 52
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="GoText" type="Label" parent="GameOverPanel/Panel" unique_id=1807143544]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = -40.0
+offset_bottom = 230.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "All three lights have gone out.
+The anomalies took over the farm."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VBox" type="VBoxContainer" parent="GameOverPanel/Panel" unique_id=1045996210]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -190.0
+offset_right = 160.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="RestartBtn" type="Button" parent="GameOverPanel/Panel/VBox" unique_id=117915398]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "RESTART (DAY 1)"
+
+[node name="GoMenuBtn" type="Button" parent="GameOverPanel/Panel/VBox" unique_id=1674509333]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "MAIN MENU"
+
+[node name="BadEnding" type="VideoStreamPlayer" parent="." unique_id=516414480]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand = true
+
+[node name="WinPanel" type="Control" parent="." unique_id=229435211]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dimmer" type="ColorRect" parent="WinPanel" unique_id=2109496093]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.88)
+
+[node name="Panel" type="Panel" parent="WinPanel" unique_id=2125682802]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = -290.0
+offset_right = 420.0
+offset_bottom = 290.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WinTitle" type="Label" parent="WinPanel/Panel" unique_id=1973635736]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 34.0
+offset_bottom = 104.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.6, 1)
+theme_override_font_sizes/font_size = 48
+text = "YOU SURVIVED"
+horizontal_alignment = 1
+
+[node name="WinStats" type="Label" parent="WinPanel/Panel" unique_id=1534532649]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 120.0
+offset_right = -50.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "..."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="WinMenuBtn" type="Button" parent="WinPanel/Panel" unique_id=1072491242]
+custom_minimum_size = Vector2(280, 58)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -88.0
+offset_right = 140.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "MAIN MENU"
+
+[node name="GoodEnding" type="VideoStreamPlayer" parent="." unique_id=483144307]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand = true
+
+[node name="TrueEndingPanel" type="Panel" parent="." unique_id=823879212]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="TrueEndingPanel" unique_id=580736941]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.17641911, 0.17641908, 0.17641908, 1)
+
+[node name="TrueEnding" type="VideoStreamPlayer" parent="." unique_id=225943335]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand = true
+
+[node name="PageLetters" type="Panel" parent="." unique_id=118958088]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.374
+anchor_top = 0.187
+anchor_right = 0.68200004
+anchor_bottom = 0.80300003
+offset_left = -16.080017
+offset_top = -83.96001
+offset_right = -16.440063
+offset_bottom = -84.24005
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContentPage" type="Label" parent="PageLetters" unique_id=1966411990]
+visible = false
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -187.5
+offset_top = 123.0
+offset_right = 215.5
+offset_bottom = -84.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="JournalPage" type="Label" parent="PageLetters" unique_id=370742155]
+visible = false
+layout_mode = 0
+offset_left = 22.0
+offset_top = 20.0
+offset_right = 154.0
+offset_bottom = 46.0
+
+[node name="Page1" type="TextureRect" parent="PageLetters" unique_id=1540767358]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -125.569885
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("30")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Page2" type="TextureRect" parent="PageLetters" unique_id=1082096024]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -125.569885
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("31")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Page3" type="TextureRect" parent="PageLetters" unique_id=490916096]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -125.569885
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("32")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Page4" type="TextureRect" parent="PageLetters" unique_id=103879814]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -125.569885
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("33")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Page5" type="TextureRect" parent="PageLetters" unique_id=1988540010]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -125.569885
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("34")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Page6" type="TextureRect" parent="PageLetters" unique_id=173683229]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -125.569885
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("35")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Page7" type="TextureRect" parent="PageLetters" unique_id=875064291]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_top = -10.0
+offset_right = -67.48016
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("36")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="Back" type="Button" parent="PageLetters" unique_id=1556598462]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -46.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Back"
+
+[node name="Shader" type="CanvasLayer" parent="." unique_id=1661265614]
+
+[node name="ColorRect" type="ColorRect" parent="Shader" unique_id=328042553]
+material = SubResource("ShaderMaterial_lmoi6")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_right = 9.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="pressed" from="Page" to="." method="_on_page_1_pressed"]
+[connection signal="finished" from="TrueEnding" to="." method="_on_true_ending_finished"]
+[connection signal="pressed" from="PageLetters/Back" to="." method="_on_back_pressed"]

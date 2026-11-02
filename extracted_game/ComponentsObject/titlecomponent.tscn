@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b8mi7p3vh414p"]
+
+[node name="Title" type="CanvasLayer" unique_id=1661321556]
+process_mode = 3
+
+[node name="Control" type="Control" parent="." unique_id=520265165]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 361.0
+offset_top = 110.0
+offset_right = 762.0
+offset_bottom = 182.0
+
+[node name="BGColor" type="ColorRect" parent="Control" unique_id=2101395707]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9955913, 0.9955913, 0.9955913, 0.133)
+
+[node name="Title" type="Label" parent="Control" unique_id=50473567]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.5890956, 0.5890956, 0.5890956, 1)
+theme_override_font_sizes/font_size = 30
+text = " THE CATTLE"
+horizontal_alignment = 1
+vertical_alignment = 1

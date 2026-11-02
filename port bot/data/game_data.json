@@ -1,0 +1,181 @@
+{
+  "game_info": {
+    "title": "The Cattle",
+    "genre": "Analog Horror / Anomaly Inspection Simulator",
+    "engine": "Godot Engine 4.7.0",
+    "max_lives": 3,
+    "final_day": 7,
+    "true_form_chance": 0.1,
+    "true_form_min_day": 5
+  },
+  "days": {
+    "1": {
+      "day_number": 1,
+      "anomalies": 3,
+      "normal": 4,
+      "clue": "Redness of body parts",
+      "clue_vi": "Vùng da hoặc bộ phận bị ửng đỏ bất thường",
+      "journal_page": 1
+    },
+    "2": {
+      "day_number": 2,
+      "anomalies": 4,
+      "normal": 4,
+      "clue": "Droopy ears, Cuts / Wounds",
+      "clue_vi": "Tai rủ xuống như vải ướt, Vết cắt sâu không chảy máu",
+      "journal_page": 2
+    },
+    "3": {
+      "day_number": 3,
+      "anomalies": 4,
+      "normal": 5,
+      "clue": "Weird sound coming from cows",
+      "clue_vi": "Tiếng kêu bị méo mó, có dấu hiệu muốn giao tiếp",
+      "journal_page": 3
+    },
+    "4": {
+      "day_number": 4,
+      "anomalies": 7,
+      "normal": 4,
+      "clue": "Extra limbs",
+      "clue_vi": "Chân thừa (5 chân hoặc mọc chi dị dạng)",
+      "journal_page": 4
+    },
+    "5": {
+      "day_number": 5,
+      "anomalies": 7,
+      "normal": 5,
+      "clue": "Flies swarming on body parts",
+      "clue_vi": "Đám ruồi bu quanh bộ phận, mùi thối rữa nồng nặc",
+      "journal_page": 5
+    },
+    "6": {
+      "day_number": 6,
+      "anomalies": 8,
+      "normal": 5,
+      "clue": "Something wrong with the tail / Human eyes",
+      "clue_vi": "Đuôi bất thường uốn lượn, Mắt người nhìn chằm chằm",
+      "journal_page": 6
+    },
+    "7": {
+      "day_number": 7,
+      "anomalies": 9,
+      "normal": 6,
+      "clue": "All Traits are active",
+      "clue_vi": "Tất cả các loại dị thường đều kích hoạt cùng lúc",
+      "journal_page": 7
+    }
+  },
+  "traits": [
+    {
+      "id": "redness",
+      "day": 1,
+      "parts": ["Eyes", "Ears", "Legs", "Tail", "Body", "Mouth"],
+      "description_en": "There is a raw, unnatural REDNESS spreading across the part. It almost looks like it's glowing under the skin.",
+      "description_vi": "Có một vệt ĐỎ bất thường, thô ráp lan rộng trên bộ phận này. Nó gần như phát sáng bên dưới lớp da."
+    },
+    {
+      "id": "droopy_ears",
+      "day": 2,
+      "parts": ["Ears"],
+      "description_en": "Both ears hang limp and DROOPY like wet cloth. They don't react to sound at all.",
+      "description_vi": "Cả hai tai đều rủ xuống ủ rũ như một tấm giẻ ướt. Chúng hoàn toàn không phản ứng gì với âm thanh."
+    },
+    {
+      "id": "cuts",
+      "day": 2,
+      "parts": ["Body"],
+      "description_en": "Deep CUTS and WOUNDS run across the body. They look carved rather than scratched... and they are not bleeding.",
+      "description_vi": "Những VẾT CẮT và VẾT THƯƠNG sâu hoắm chạy ngang cơ thể. Chúng trông giống như bị khắc vào hơn là vết cào... và chúng hoàn toàn không hề chảy máu."
+    },
+    {
+      "id": "weird_sound",
+      "day": 3,
+      "parts": ["Sound"],
+      "description_en": "Nothing looks wrong with the mouth... but something feels off. Maybe try LISTENING to it.",
+      "description_vi": "Bên ngoài miệng trông bình thường... nhưng có cảm giác rất kỳ quái. Hãy thử LẮNG NGHE tiếng kêu của nó."
+    },
+    {
+      "id": "extra_limbs",
+      "day": 4,
+      "parts": ["Legs"],
+      "description_en": "Wait. One... two... three... four... FIVE? There is an EXTRA LEG folded tight against its belly.",
+      "description_vi": "Khoan đã. Một... hai... ba... bốn... NĂM? Có một chiếc CHÂN THỪA gập chặt nép sát vào bụng nó."
+    },
+    {
+      "id": "flies",
+      "day": 5,
+      "parts": ["Body", "Legs", "Tail", "Ears"],
+      "description_en": "A thick cloud of FLIES swarms around the part. The smell of rot is overwhelming.",
+      "description_vi": "Một đám RUỒI dày đặc bu kín xung quanh bộ phận này. Mùi thối rữa nồng nặc đến nghẹt thở."
+    },
+    {
+      "id": "human eyes",
+      "day": 6,
+      "parts": ["Eyes"],
+      "description_en": "Trust the eyes over the rest of the exam. If the eyes are wrong, the animal is wrong, regardless of any other reading.",
+      "description_vi": "Đôi mắt người đầy quái dị nhìn chằm chằm vào bạn. Nếu đôi mắt có vấn đề, sinh vật này chắc chắn là dị vật."
+    }
+  ],
+  "examine_parts": ["Ears", "Eyes", "Body", "Tail", "Legs", "Mouth"],
+  "journal_pages": [
+    {
+      "page": 1,
+      "en": "They called it routine.\nCheck the skin.\nCheck the paperwork.\nCheck the eyes.\nIt almost feels rehearsed.\nThe news always knows what to tell us before we ever see it ourselves.",
+      "vi": "Họ gọi đây là thủ tục định kỳ.\nKiểm tra da.\nKiểm tra giấy tờ.\nKiểm tra mắt.\nMọi thứ như thể đã được tập dượt từ trước.\nBản tin luôn biết cần phải nói gì với chúng tôi trước khi chúng tôi tự mình nhìn thấy."
+    },
+    {
+      "page": 2,
+      "en": "Every morning they add something new.\nEvery afternoon I find it.\nIs the broadcast warning us...\nor teaching us what to notice?\nI can't decide which answer frightens me more.",
+      "vi": "Mỗi sáng họ lại thêm vào một điều mới.\nMỗi chiều tôi đều bắt gặp đúng điều đó.\nLiệu bản tin đang cảnh báo chúng ta...\nhay đang dạy chúng ta cần phải chú ý đến cái gì?\nTôi không biết câu trả lời nào khiến tôi sợ hãi hơn."
+    },
+    {
+      "page": 3,
+      "en": "One looked at me today.\nNot like an animal.\nLike it recognized me.\nIt never moved.\nIt only watched until the truck came.\nThe men unloading the bodies wore no uniforms.\nOnly white robes.",
+      "vi": "Hôm nay có một con nhìn tôi.\nKhông phải ánh nhìn của loài vật.\nMà như thể nó nhận ra tôi.\nNó không hề cử động.\nNó chỉ chăm chăm nhìn cho đến khi chiếc xe tải đến.\nNhững người bốc dỡ các xác chết không mặc đồng phục.\nChỉ khoác trên mình những chiếc áo choàng trắng."
+    },
+    {
+      "page": 4,
+      "en": "I followed one of their trucks after my shift.\nIt stopped in a field I swear wasn't there yesterday.\nThey carried the bodies into the fog.\nI heard voices repeating the same sentence over and over.\n'The First Herd gathers what is returned.'\nI left before they saw me.\nAt least...\nI hope they didn't.",
+      "vi": "Sau ca trực, tôi đã bám theo một trong những chiếc xe tải của họ.\nNó dừng lại ở một cánh đồng mà tôi thề là hôm qua chưa từng có.\nHọ khiêng những cái xác tiến vào làn sương mù.\nTôi nghe thấy những giọng nói lặp đi lặp lại cùng một câu:\n'Đàn Bò Đầu Tiên tập hợp những gì được trả về.'\nTôi rời đi trước khi họ nhìn thấy tôi.\nÍt nhất là...\ntôi hy vọng họ đã không thấy."
+    },
+    {
+      "page": 5,
+      "en": "The anchor looked at the camera today.\nNo...\nHe looked at me.\nThe television stayed on after the broadcast ended.\nThere was no picture.\nJust one voice.",
+      "vi": "Hôm nay phát thanh viên nhìn thẳng vào ống kính.\nKhông...\nÔng ta nhìn thẳng vào tôi.\nChiếc TV vẫn bật sau khi bản tin kết thúc.\nKhông có hình ảnh nào cả.\nChỉ có duy nhất một giọng nói."
+    },
+    {
+      "page": 6,
+      "en": "I finally understand.\nEvery one we destroy is taken somewhere.\nThey're building toward something.\nA gathering.\nA ritual.\nThey've tried before.\nI think this may be their last chance.\nIf I'm right...\nthen tomorrow morning do not watch the broadcast.\nTurn the television off before it begins.",
+      "vi": "Cuối cùng tôi đã hiểu ra.\nMỗi con quái vật chúng ta tiêu diệt đều bị đưa đi một nơi nào đó.\nChúng đang gầy dựng một thứ gì đó.\nMột cuộc tụ họp.\nMột nghi lễ hiến tế.\nChúng đã từng thử trước đây.\nTôi nghĩ lần này có thể là cơ hội cuối cùng của chúng.\nNếu tôi đúng...\nthì sáng mai đừng xem bản tin nữa.\nHãy tắt chiếc tivi đi trước khi nó bắt đầu phát sóng."
+    },
+    {
+      "page": 7,
+      "en": "Maybe tomorrow belongs to us.",
+      "vi": "Có lẽ ngày mai sẽ thuộc về chúng ta."
+    }
+  ],
+  "endings": {
+    "bad_ending": {
+      "title": "ENDING 1/3 — BAD ENDING",
+      "condition": "Survive to Day 7 but allowed at least 1 anomaly inside the barn.",
+      "vi_condition": "Sống sót qua 7 ngày nhưng đã cho ít nhất 1 con dị thường lọt vào trang trại.",
+      "summary": "You lasted all 7 days. But you let them inside. Whatever they were building, you helped build it. The lights stayed on in your barn. That is the only mercy in this.",
+      "summary_vi": "Bạn đã trụ lại đủ 7 ngày. Nhưng bạn đã để chúng lọt vào trong. Dù cho thứ mà chúng đang gầy dựng là gì, bạn đã tiếp tay cho chúng. Ánh đèn trong chuồng trại của bạn vẫn sáng. Đó là lòng khoan dung duy nhất trong chuyện này."
+    },
+    "good_ending": {
+      "title": "ENDING 2/3 — GOOD ENDING (NORMAL ENDING)",
+      "condition": "Survive to Day 7 without letting any anomalies inside, but watched the TV on Day 7 or did not collect all 6 journal pages.",
+      "vi_condition": "Vượt qua 7 ngày không để lọt dị thường, nhưng đã bật TV ngày 7 hoặc không nhặt đủ 6 trang nhật ký.",
+      "summary": "You survived all 7 days. Nothing ever got inside. The herd is clean. The barn is quiet. You did your job, and you never learned why. Some pages went unread.",
+      "summary_vi": "Bạn đã sống sót qua 7 ngày. Không có thứ gì lọt được vào bên trong. Đàn gia súc sạch sẽ. Chuồng trại tĩnh lặng. Bạn đã hoàn thành công việc của mình, và bạn sẽ không bao giờ biết được lý do tại sao. Một vài trang giấy vẫn chưa được đọc."
+    },
+    "true_ending": {
+      "title": "ENDING 3/3 — TRUE ENDING",
+      "condition": "Never let an anomaly in, never shoot an innocent normal cow, collect all 6 journal pages before Day 7, and choose 'Don't turn on the TV' on Day 7 morning.",
+      "vi_condition": "Không để lọt dị thường, không bắn nhầm bất kỳ con bò thường nào, thu thập đủ 6 trang nhật ký trước Ngày 7, và chọn 'Không bật TV' vào sáng Ngày 7.",
+      "summary": "You never let one in. You never shot an innocent one. You found every page. You turned the television off, and the morning came anyway. Maybe tomorrow belongs to us.",
+      "summary_vi": "Bạn không bao giờ để một con lọt vào. Bạn chưa từng bắn nhầm một sinh linh vô tội. Bạn đã tìm thấy tất cả các trang nhật ký. Bạn đã tắt chiếc tivi đi, và bình minh vẫn cứ đến. Có lẽ ngày mai sẽ thuộc về chúng ta."
+    }
+  }
+}

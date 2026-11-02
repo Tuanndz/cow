@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4uxgps72q3v3"
+path="res://.godot/imported/Nighttime (Day 1-6).mp3-e682a240d3883dbfcbd6b3a6934b179f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Background Music/Night BGM/Nighttime (Day 1-6).mp3"
+dest_files=["res://.godot/imported/Nighttime (Day 1-6).mp3-e682a240d3883dbfcbd6b3a6934b179f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://7r7381kwvg22"]
+
+[ext_resource type="VideoStream" uid="uid://d0vr4smw0o2ow" path="res://Assets/Video/Thorfinn - I have no enemies _ Manga animation.ogv" id="1"]
+
+[node name="test" type="Control" unique_id=631560066]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TrueEndingPanel" type="Panel" parent="." unique_id=1803099084]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TrueEnding" type="VideoStreamPlayer" parent="TrueEndingPanel" unique_id=216576862]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.5
+offset_top = -300.0
+offset_right = 512.5
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1")
+autoplay = true
+expand = true
+
+[node name="OffBtn" type="Button" parent="TrueEndingPanel" unique_id=2036326109]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49300003
+anchor_top = 0.845
+anchor_right = 0.49300003
+anchor_bottom = 0.845
+offset_left = -41.56006
+offset_top = -57.600037
+offset_right = 41.43994
+offset_bottom = 0.39996338
+grow_horizontal = 2
+grow_vertical = 2
+text = "TURN OFF"

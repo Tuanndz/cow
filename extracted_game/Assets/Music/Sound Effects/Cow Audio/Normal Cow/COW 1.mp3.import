@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://di071soj5ao25"
+path="res://.godot/imported/COW 1.mp3-a6d4b1269cd036e5686ac211b4e9e024.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Sound Effects/Cow Audio/Normal Cow/COW 1.mp3"
+dest_files=["res://.godot/imported/COW 1.mp3-a6d4b1269cd036e5686ac211b4e9e024.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

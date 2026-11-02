@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d16ocq1aaxvl8"
+path="res://.godot/imported/LINE 1.wav-bbf186a050d016c6b0fe0b07a786ba42.sample"
+
+[deps]
+
+source_file="res://Assets/reporterAudio/DAY 4 AUDIO/LINE 1.wav"
+dest_files=["res://.godot/imported/LINE 1.wav-bbf186a050d016c6b0fe0b07a786ba42.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=8000
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=0
+compress/mode=0

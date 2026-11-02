@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxy8sve5ecrve"
+path="res://.godot/imported/Last Morning News (DAY 7).mp3-8bd304a7b0e9662d2df44b46106ccb06.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Background Music/Morning Broadcasts/Last Morning News (DAY 7).mp3"
+dest_files=["res://.godot/imported/Last Morning News (DAY 7).mp3-8bd304a7b0e9662d2df44b46106ccb06.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

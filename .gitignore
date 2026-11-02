@@ -1,0 +1,13 @@
+# Tools and zip archives
+gdre_tools/
+gdre_tools.zip
+mingit/
+mingit.zip
+
+# Original compiled binaries (>100MB)
+exe/
+
+# Godot cache
+.godot/
+extracted_game/.godot/
+*.log
